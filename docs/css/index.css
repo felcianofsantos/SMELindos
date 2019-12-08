@@ -1,0 +1,119 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.heading {
+  background-color: #1a90be;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.heading img {
+  height: 95%;
+}
+.heading .heading--text {
+  font-size: 2em;
+  padding-left: 0.5em;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  font-family: Roboto, "sans serif";
+  text-align: center;
+  background-color: #dfdfdf;
+  height: 83%;
+}
+.content .content--title {
+  font-size: 2em;
+  padding: 0.5em;
+  line-height: 1.5;
+}
+.content .content--subtitle {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+.content .content--text {
+  padding: 1em;
+  margin: 0 2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+.content .content--description {
+  padding: 1em;
+  margin: 0 2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+.content .button {
+  box-shadow: 0px 10px 14px -7px #48679a;
+  background-color: #009473;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 13px 32px;
+  font-size: 1em;
+}
+.content .btn-init {
+  width: 80%;
+  margin-top: 2em;
+}
+.content .btn-question {
+  margin: 3em 2em;
+}
+.content .content--privacy {
+  position: absolute;
+  bottom: 10%;
+}
+.content .content--questions {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disabled {
+  display: none;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  background-color: #1a90be;
+  height: 7%;
+}
+.footer .footer--text {
+  padding: 0.9em;
+}
+
+@media (min-width: 700px) {
+  .content .content--description {
+    text-align: center;
+  }
+  .content .content--text {
+    text-align: center;
+    margin: auto;
+  }
+  .content .content--questions {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1000px) {
+  .content .content--questions {
+    top: 30%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
