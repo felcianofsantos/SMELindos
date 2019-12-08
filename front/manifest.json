@@ -1,0 +1,14 @@
+{
+  "name": "Questionário SME",
+  "short_name": "SME",
+  "theme_color": "#1a90be",
+  "background_color": "#dfdfdf",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "Scope": "/",
+  "icons": [
+    { "src": "./img/eye192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./img/eye512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "start_url": "index.html"
+}
