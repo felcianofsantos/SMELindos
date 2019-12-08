@@ -14,13 +14,15 @@ body {
   justify-content: center;
 }
 .heading img {
-  height: 95%;
+  height: 70%;
 }
 .heading .heading--text {
   font-size: 2em;
+  font-weight: bold;
   padding-left: 0.5em;
   text-align: center;
-  color: white;
+  color: #bdbcba;
+  line-height: 1;
 }
 
 .content {
@@ -30,8 +32,10 @@ body {
   height: 83%;
 }
 .content .content--title {
-  font-size: 2em;
+  font-size: 1.5em;
   padding-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   line-height: 1.5;
 }
 .content .content--subtitle {
@@ -101,6 +105,11 @@ body {
 }
 
 @media (min-width: 700px) {
+  .content .content--title {
+    font-size: 2em;
+    padding-top: 0.5em;
+    line-height: 1.5;
+  }
   .content .content--description {
     text-align: center;
   }
