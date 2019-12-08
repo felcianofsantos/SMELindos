@@ -3,6 +3,10 @@ $secondary-color: #dfdfdf;
 $third-color: #009473;
 $font: Roboto, "sans serif";
 
+#butInstall {
+  opacity: 0;
+}
+
 html,
 body {
   height: 100%;
