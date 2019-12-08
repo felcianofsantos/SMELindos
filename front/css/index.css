@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.heading {
+  background-color: #1a90be;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.heading img {
+  height: 100%;
+}
+.heading .heading--text {
+  font-size: 2em;
+  padding-left: 0.5em;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  font-family: Roboto, "sans serif";
+  text-align: center;
+  background-color: #dfdfdf;
+  height: 83%;
+}
+.content .content--title {
+  font-size: 2em;
+  padding: 0.5em;
+  line-height: 1.5;
+}
+.content .content--subtitle {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+.content .content--text {
+  padding: 1em;
+  margin: 0 2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+.content .button {
+  box-shadow: 0px 10px 14px -7px #48679a;
+  background-color: #009473;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 13px 32px;
+  font-size: 1em;
+}
+.content .btn-init {
+  margin-top: 2em;
+  width: 80%;
+}
+.content .button-disabled {
+  display: none;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  background-color: #1a90be;
+  height: 7%;
+}
+.footer .footer--text {
+  padding: 0.9em;
+}
+
+/*# sourceMappingURL=index.css.map */
