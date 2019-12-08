@@ -39,8 +39,15 @@ body {
     line-height: 1.5;
   }
   .content--subtitle {
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 0.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .content--text {
     padding: 1em;
@@ -105,6 +112,7 @@ body {
     .content--text {
       text-align: center;
       margin: auto;
+      width: 100%;
     }
     .content--questions {
       position: absolute;

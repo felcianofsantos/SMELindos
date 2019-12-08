@@ -6,6 +6,7 @@ const FILES_TO_CACHE = [
   "css/index.css",
   "css/reset.css",
   "js/index.js",
+  "js/questions.js"
   "img/favicon.ico",
   "img/eye192x192.png",
   "img/eye-512x512.png",
