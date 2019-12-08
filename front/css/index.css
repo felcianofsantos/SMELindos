@@ -1,8 +1,12 @@
+#butInstall {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
 html,
 body {
   height: 100%;
-  width: 100%;
-  margin: 0;
 }
 
 .heading {
@@ -14,13 +18,15 @@ body {
   justify-content: center;
 }
 .heading img {
-  height: 95%;
+  height: 70%;
 }
 .heading .heading--text {
   font-size: 2em;
+  font-weight: bold;
   padding-left: 0.5em;
   text-align: center;
-  color: white;
+  color: #bdbcba;
+  line-height: 1;
 }
 
 .content {
@@ -30,13 +36,22 @@ body {
   height: 83%;
 }
 .content .content--title {
-  font-size: 2em;
-  padding: 0.5em;
+  font-size: 1.5em;
+  padding-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
   line-height: 1.5;
 }
 .content .content--subtitle {
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 0.5em;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .content .content--text {
   padding: 1em;
@@ -94,12 +109,18 @@ body {
 }
 
 @media (min-width: 700px) {
+  .content .content--title {
+    font-size: 2em;
+    padding-top: 0.5em;
+    line-height: 1.5;
+  }
   .content .content--description {
     text-align: center;
   }
   .content .content--text {
     text-align: center;
     margin: auto;
+    width: 100%;
   }
   .content .content--questions {
     position: absolute;

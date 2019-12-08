@@ -28,17 +28,29 @@ const questions = [
 ];
 const conditionalQuestions = [
   {
-    id: 1,
+    id: 11,
     question: "Clonazepam?"
   },
   {
-    id: 2,
+    id: 12,
     question: "Fenobarbital?"
   }
 ];
 
 const answers = [];
 let questionCount = 1;
+let conditionalCount = 11;
+
+function getQuestionById(id) {
+  const selectedQuestion = questions.find(question => question.id === id);
+  question.innerHTML = selectedQuestion.question;
+}
+function getConditionalQuestionById(id) {
+  const selectedConditionalQuestion = conditionalQuestions.find(
+    question => question.id === id
+  );
+  question.innerHTML = selectedConditionalQuestion.question;
+}
 
 function nextQuestion(answer) {
   const singularAnswer = {
@@ -47,6 +59,15 @@ function nextQuestion(answer) {
     answer: answer
   };
   answers.push(singularAnswer);
+
+  if (
+    (questionCount === 4 && answer === "Sim" && conditionalCount === 11) ||
+    conditionalCount == 12
+  ) {
+    getConditionalQuestionById(conditionalCount);
+    conditionalCount = conditionalCount + 1;
+    return;
+  }
 
   questionCount = questionCount + 1;
 

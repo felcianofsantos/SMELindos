@@ -10,19 +10,30 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Questionário SME</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#23233c" />
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/SMELindos/service-worker.js"),
+            { scope: "/SMELindos/" };
+        });
+      }
+    </script>
   </head>
 
   <body>
+    <button id="butInstall" aria-label="Install" hidden></button>
     <header class="heading">
       <img src="img/logo.png" alt="Logo da SME" />
-      <h1 class="heading--text">SME Alfa</h1>
     </header>
     <main class="content">
-      <h1 class="content--title">Bem-vindo ao Questionário SME Alfa</h1>
+      <h1 class="content--title">Questionário Alfa</h1>
       <h2 class="content--subtitle disabled"></h2>
       <p class="content--description">
-        Reforçamos que nenhuma das suas respostas dadas a este questionário será
-        compartilhada com a sua empresa ou com seu chefe.
+        Reforçamos que nenhuma das suas respostas será compartilhada com a sua
+        empresa ou com seu chefe.
       </p>
       <p class="content--text">
         Sua privacidade é garantida pela SME - Serviços Médicos Especializados
@@ -32,9 +43,10 @@
       <button class="button btn-init">Começar</button>
     </main>
     <footer class="footer">
-      <p class="footer--text">Feito por SME Lindos</p>
+      <p class="footer--text">Feito por Alfa</p>
     </footer>
     <script src="js/questions.js"></script>
     <script src="js/index.js"></script>
+    <script src="install.js"></script>
   </body>
 </html>

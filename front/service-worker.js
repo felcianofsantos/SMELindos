@@ -1,15 +1,15 @@
-const CACHE_NAME = "static-cache-v1.2";
-const DATA_CACHE_NAME = "data-cache-v1.2";
+const CACHE_NAME = "static-cache-v1.1";
+const DATA_CACHE_NAME = "data-cache-v1.1";
 
 const FILES_TO_CACHE = [
   "index.html",
   "css/index.css",
   "css/reset.css",
   "js/index.js",
-  "js/questions.js"
+  "js/questions.js",
   "img/favicon.ico",
   "img/eye192x192.png",
-  "img/eye-512x512.png",
+  "img/eye512x512.png",
   "img/apple-touch-icon.png"
 ];
 

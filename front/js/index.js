@@ -28,11 +28,6 @@ function createButton(text) {
   questionsDiv.appendChild(btnNew);
 }
 
-function getQuestionById(id) {
-  const selectedQuestion = questions.find(question => question.id === id);
-  question.innerHTML = selectedQuestion.question;
-}
-
 btnInit.addEventListener("click", event => {
   event.preventDefault();
 
