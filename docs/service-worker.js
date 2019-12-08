@@ -8,7 +8,7 @@ const FILES_TO_CACHE = [
   "js/index.js",
   "img/favicon.ico",
   "img/eye192x192.png",
-  "img/eye-512x512.png",
+  "img/eye512x512.png",
   "img/apple-touch-icon.png"
 ];
 
