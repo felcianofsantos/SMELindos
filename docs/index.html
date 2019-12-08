@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Questionário SME</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#23233c" />
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/startpage/service-worker.js"),
+            { scope: "/startpage/" };
+        });
+      }
+    </script>
   </head>
 
   <body>
